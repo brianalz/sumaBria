@@ -4,11 +4,22 @@
         <meta charset="utf-8">
         <title>suma</title>
     </head>
+    <style>
+        body{ 
+            background-color: yellow;
+            font-family: cursive;
+            font-style: italic;
+            text-align:center;
+        }
+    </style>
+   
     <body>
         <form action ="">
-            <input type="text" id="numero1">
-            <input type="text" id="numero2">
-            <input type="button" value="suma" onclick="alert(suma(10,50));">
+            <h1><center>Suma</center></h1>
+            <hr>
+            <center><input type="text" id="numero1"></center>
+            <center><input type="text" id="numero2"></center>
+            <center><input type="button" value="suma" onclick="alert(suma(10,50));"></center>
         </form>
     </body>
     <script>
@@ -17,6 +28,7 @@
             var numero2 = parseFloat(document.getElementById("numero2").value);
             var resultado = numero1 + numero2;
             return resultado;
+            
         }
     </script>
 </html>
